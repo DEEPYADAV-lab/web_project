@@ -6,9 +6,7 @@
 
 **SAU/CS/DMTECH(CSE)/2024/07**
 
-# Repository: JavaScript Implementations for Web Development 
-(Integrated Dual Degree BTech-MTech, CSE - Semester 2)
-
+# Repository:  Web Designing project
 This repository documents the collection of JavaScript implementations developed as part of the Web Development course (IDD, CSE) during the second semester. The artefacts herein demonstrate the application of client-side scripting principles to enhance the interactivity and dynamic behaviour of web interfaces, built upon foundational HTML and CSS structures.
 
 ## Introduction
