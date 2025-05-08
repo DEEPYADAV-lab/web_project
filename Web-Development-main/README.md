@@ -1,11 +1,10 @@
-![sau-logo](media/sau-logo.png)
 # South Asian University
 
-**Mukund Prasad**
+**Deep yadav**
 
 **Integrated Dual Degree BTech-MTech, CSE - Class of 2029**
 
-**SAU/CS/DMTECH(CSE)/2024/13**
+**SAU/CS/DMTECH(CSE)/2024/07**
 
 # Repository: JavaScript Implementations for Web Development 
 (Integrated Dual Degree BTech-MTech, CSE - Semester 2)
@@ -62,20 +61,9 @@ The following JavaScript implementations are included in this repository:
 * **CSS:** Employed for the declarative styling and visual presentation of web interfaces.
 * **JavaScript:** The primary scripting language used for client-side dynamic functionality and interactivity.
 
-## Repository Access 
-To examine the individual project implementations, the repository can be accessed at:
-
-[JavaScript Implementations for Web Development](http://mukundxplore.github.io/Web-Development)
-
-## Snapshot
-![JS Implementation](https://github.com/user-attachments/assets/01b7a09b-5ffe-4265-af8a-2c961804218f)
-
 
 ## Conclusion
 
 This repository contains my client-side JavaScript projects from the Web Development course (Semester 2). These demonstrate foundational front-end scripting. The dynamic aspects explored here have ignited my interest in server-side technologies, which I plan to learn later.
 I look forward to exploring the full scope of web development.
-
-## License
-
-The content of this project itself is licensed under the Creative Commons Zero v1.0 Universal License, and the underlying source code used to format and display that content is licensed under the [MIT license]. More details can be found [here](LICENSE).
+ 
