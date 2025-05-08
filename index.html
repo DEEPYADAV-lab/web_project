@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Implementation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+      <img src="media/sau-logo.png" alt="Logo" style="height: 66.67px; position: absolute; top: 39px; left: 10px;">
+      <h2 class="header" style="margin: 0; padding: 10px;">
+        <pre>Web Designing Project
+          
+        </pre>
+    </header>
+    <br>
+    <br>
+    <div class="container" style="margin-top: 100px;">
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <p>Display an Alert when the Page Loads</p>
+          <button id="reload" class="colourbutton" style="padding: 10px 20px;" onclick="location.reload();">Reload the Page</button>
+          <script src="alert.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Change color of Button after a Click-Event</p>
+          <button id="colorButton" class="colourbutton" style="padding: 10px 20px;">Click Me</button>
+          <script src="clickevent.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Variables and Data Types I/O</p>
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" placeholder="Your Name" style="margin-bottom: 10px;">
+          <br>
+          <label for="number">Enter a number:</label>
+          <input type="number" id="number" placeholder="Your Number" style="margin-bottom: 10px;">
+          <br>
+          <p>Are you a student?</p>
+          <input type="radio" id="studentYes" name="isStudent" value="true">
+          <label for="studentYes">Yes</label>
+          <input type="radio" id="studentNo" name="isStudent" value="false">
+          <label for="studentNo">No</label>
+          <br>
+          <button onclick="displayValues()" style="padding: 10px 20px;" class="colourbutton">Submit</button>
+          <div id="output" style="margin-top: 10px;"></div>
+          <script src="vdtio.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <p>JavaScript Operators</p>
+          <label for="inputA">Enter value for a:</label>
+          <input type="number" id="inputA" placeholder="Value of a" style="margin-bottom: 10px;">
+          <br>
+          <label for="inputB">Enter value for b:</label>
+          <input type="number" id="inputB" placeholder="Value of b" style="margin-bottom: 10px;">
+          <br>
+          <button onclick="performOperations()" class="colourbutton">Run Activity</button>
+          <div id="output1"></div>
+          <script src="operators.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Simple Grade Calculator</p>
+          <input type="number" id="marks" placeholder="Enter your marks">
+          <button onclick="calculateGrade()" class="colourbutton">Check Grade</button>
+          <div id="result"></div>
+          <script src="gradecalc.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Multiplcation Table Generator</p>
+          <input type="number" id="n" placeholder="Enter a number:">
+          <button onclick="getTable()" class="colourbutton">Generate Table</button>
+          <div id="output3"></div>
+          <script src="multiplicationtable.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <p>JavaScript Control Flow & Loops</p>
+          <br>
+          <center>
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number1" placeholder="Enter a number">
+            <button onclick="checkEvenOdd()" class="colourbutton">Check Even or Odd</button>
+            <button onclick="printNumbers()" class="colourbutton">Print 1 to 10</button>
+            <button onclick="countDown()" class="colourbutton">Count Down 5 to 1</button>
+          </center>
+          <div id="output4"></div>
+          <script src="jscfl.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Simple User Profile Form</p>
+          <br>
+          <div style="margin-bottom: 10px;">
+            <label for="name1">Enter Your Name:</label>
+            <input type="text" id="name1" placeholder="Your Name">
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="age">Enter Your Age:</label>
+            <input type="number" id="age" placeholder="Your Age">
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="isStudent">Are you a student?</label>
+            <select id="isStudent">
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </div>
+          <button onclick="displayProfile()" class="colourbutton">Submit</button>
+          <div id="output5"></div>
+          <script src="userprofile.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>JavaScript Functions</p>
+          <label for="num">Enter a Number:</label>
+          <input type="number" id="num1" placeholder="Enter a number">
+          <button onclick="calculateSquare()" class="colourbutton">Find Square</button>
+          <button onclick="addNumbers()" class="colourbutton">Add Two Numbers</button>
+          <button onclick="checkEvenOdd1()" class="colourbutton">Check Even or Odd</button>
+          <div id="output6"></div>
+          <script src="functions.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <p>Dynamic Color Mixer</p>
+          <label for="red">Red: <span id="redValue" class="color-value">0</span>
+          </label>
+          <br>
+          <input type="range" id="red" class="slider" min="0" max="255" value="0" oninput="updateColor()">
+          <br>
+          <label for="green">Green: <span id="greenValue" class="color-value">0</span>
+          </label>
+          <br>
+          <input type="range" id="green" class="slider" min="0" max="255" value="0" oninput="updateColor()">
+          <br>
+          <label for="blue">Blue: <span id="blueValue" class="color-value">0</span>
+          </label>
+          <br>
+          <input type="range" id="blue" class="slider" min="0" max="255" value="0" oninput="updateColor()">
+          <br>
+          <div id="colorBox"></div>
+          <script src="colormixer.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Simple Calculator</p>
+          <br>
+          <input type="number" id="num2" placeholder="Enter first number">
+          <br>
+          <input type="number" id="num3" placeholder="Enter second number">
+          <br>
+          <select id="operation">
+            <option value="add">Add (+)</option>
+            <option value="subtract">Subtract (-)</option>
+            <option value="multiply">Multiply (×)</option>
+            <option value="divide">Divide (÷)</option>
+          </select>
+          <br>
+          <br>
+          <button onclick="calculate()" class="colourbutton">Calculate</button>
+          <div id="output7"></div>
+          <script src="calculator.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>JavaScript Event Handling</p> Task 1: Press Keys in the Input Field <input type="text" id="keyLogger" placeholder="Type something...">
+          <p>Check the console for logged keys.</p> Task 2: Prevent Default Form Submission <form id="myForm">
+            <input type="text" placeholder="Enter your name">
+            <button type="submit" class="colourbutton">Submit Form</button>
+          </form>
+          <script src="jseh.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <p>Light Bulb Toggle Effect</p>
+          <img id="lightbulb" src="media/oFF_Bulb.jpg" alt="Light Bulb" style="height: 100px; cursor: pointer;" onclick="toggleLight()" class="colourbutton">
+          <script src="bulb.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Real-Time Digital Clock</p>
+          <div id="clock">00:00:00</div>
+          <button id="toggleClock" class="colourbutton">Start Clock</button>
+          <script src="clock.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Registration Form</p>
+          <form id="Form">
+            <div class="form-group">
+              <label for="name">
+                <pre>Name    :</pre>
+              </label>
+              <input type="text" id="name2" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <pre>Email   :</pre>
+              </label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="password">
+                <pre>Password:</pre>
+              </label>
+              <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="colourbutton">Submit</button>
+          </form>
+        </div>
+        <script src="rform.js"></script>
+      </div>
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <p>Registration Form with Validation</p>
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="name">
+                <pre>Name    :</pre>
+              </label>
+              <input type="text" id="name3" name="name">
+              <span class="error" id="nameError">Name is required</span>
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <pre>Email   :</pre>
+              </label>
+              <input type="email" id="email1" name="email">
+              <span class="error" id="emailError">Valid email is required</span>
+            </div>
+            <div class="form-group">
+              <label for="password">
+                <pre>Password:</pre>
+              </label>
+              <input type="password" id="password1" name="password">
+              <span class="error" id="passwordError">Password must be at least 6 characters</span>
+            </div>
+            <button type="submit" class="colourbutton">Submit</button>
+          </form>
+          <script src="rform-val.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Interactive Registration Form</p>
+          <form id="Form1">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name5">
+              <span class="error" id="nameError5">❌ Name is required</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email5">
+              <span class="error" id="emailError5">❌ Enter a valid email</span>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password5">
+              <span class="error" id="passwordError5">❌ Must be 6+ characters</span>
+            </div>
+            <button type="submit" class="colourbutton">Register</button>
+          </form>
+          <div class="success" id="successMessage">✔ Form Submitted Successfully!</div>
+          <div class="popup" id="popup">
+            <h2>🎉 Registration Successful! 🎊</h2>
+            <p>Thank you for signing up!</p>
+            <button onclick="closePopup()">Close</button>
+          </div>
+          <script src="rform-inter.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>DOM Manipulation</p>
+          <pre>Dynamic Heading / Quote Generator
+Dark/Light Mode Toggle
+Click to Add Content</pre>
+          <center>
+            <button onclick="changeHeading()" class="colourbutton">Change Heading</button>
+            <button onclick="addNewParagraph()" class="colourbutton">Add Paragraph</button>
+            <button id="darkmodetoggle" class="colourbutton">Dark Mode Toggle</button>
+          </center>
+          <center>
+            <h4 id="domHeading">Welcome! This is a Dynamic Heading</h4>
+            <div id="domContent"></div>
+          </center>
+          <script src="domm.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <p>Task Manager</p>
+          <input type="text" id="taskInput" placeholder="Enter your task here..." />
+          <button type="button" onclick="addTask()" class="colourbutton">Add Task</button>
+          <ul id="taskList"></ul>
+          <script src="taskmanager.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto; text-align: center;">
+          <p>Feedback Collector</p>
+          <input type="text" id="feedbackName" placeholder="Your Name" style="margin-bottom: 10px; padding: 5px; width: 80%;">
+          <br>
+          <select id="rating" style="margin-bottom: 10px; padding: 5px; width: 80%; border-radius: 5px; background-color: #f9f9f9; border: 1px solid #ccc;">
+            <option value="" disabled selected>Rate us</option>
+            <option value="⭐">⭐</option>
+            <option value="⭐⭐">⭐⭐</option>
+            <option value="⭐⭐⭐">⭐⭐⭐</option>
+            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+          </select>
+          <br>
+          <textarea id="feedback" rows="2" placeholder="Your feedback..." style="margin-bottom: 10px; padding: 5px; width: 80%; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+          <br>
+          <button onclick="submitFeedback()" class="colourbutton" style="padding: 10px 20px;">Submit</button>
+          <div id="feedbackList"></div>
+          <script src="feedback.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Notes Application</p>
+          <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+          <br>
+          <button id="saveBtn" onclick="saveNote()">Save Note</button>
+          <button id="clearBtn" onclick="clearNote()">Clear Note</button>
+          <div id="displayNote"></div>
+        </div>
+        <script src="notes.js"></script>
+      </div>
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <p>Daily Journal Application</p>
+          <p>
+            <textarea id="journalEntry" placeholder="Write something about your day..."></textarea>
+          </p>
+          <button onclick="saveEntry()" class="colourbutton">Save Entry</button>
+          <div id="entries">
+            <script src="journal.js"></script>
+          </div>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <p>Welcome Back (Session Storage)</p>
+          <input type="text" id="userName" placeholder="Enter your name" />
+          <br>
+          <button id="submitButton" onclick="storeName()" class="colourbutton">Submit</button>
+          <div id="welcomeMessage"></div>
+          <script src="sessionstorage.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <div>
+            <p>User Preferences</p>
+            <label for="themeSelect">Select Theme:</label>
+            <select id="themeSelect">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+            <label for="fontSizeSelect">Select Font Size:</label>
+            <select id="fontSizeSelect">
+              <option value="14px">Small</option>
+              <option value="18px" selected>Medium</option>
+              <option value="24px">Large</option>
+            </select>
+            <br>
+            <button onclick="savePreferences()" class="colourbutton">Save Preferences</button>
+            <br>
+            <div id="demoText" class="hold" style="border: 2px solid goldenrod; padding: 10px;"> This is a preview of your preferences in action. The text and background color, and font size will change only in this section. </div>
+          </div>
+          <script src="userpref.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="height: auto; width: auto;">
+          <div>
+            <p>Interactive Counter App</p>
+            <button id="incrementBtn" class="colourbutton">Increment</button>
+            <button id="decrementBtn" class="colourbutton">Decrement</button>
+            <button id="resetBtn" class="colourbutton">Reset</button>
+            <div id="counterDisplay" style="border: 2px solid goldenrod; padding: auto;">0</div>
+            <script src="counter.js"></script>
+          </div>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <div>
+            <p>DOM Manipulation Activity</p> Change Background Colour <br>
+            <br>
+            <div id="colourBox">Click the button below to change the background colour of this section</div>
+            <br>
+            <button onclick="changeColour()" class="colourbutton">Change Colour</button>
+            <br>
+            <br> Dynamic List <br>
+            <br>
+            <input type="text" id="itemInputs" placeholder="Enter a task">
+            <br>
+            <br>
+            <button onclick="addItems()" class="colourbutton">Add Task</button>
+            <ul id="taskLists"></ul>
+          </div>
+          <script src="domma.js"></script>
+        </div>
+        <div class="col" style="height: auto; width: auto;">
+          <div>
+            <p>Show & Hide Password</p>
+          </div>
+          <input type="password" id="passwords" placeholder="Enter your password">
+          <button onclick="togglePassword()" class="colourbutton">Show Password</button>
+        </div>
+        <script src="togglepassword.js"></script>
+      </div>
+      <div style="border: goldenrod solid ;size: 3px;">
+        <footer style="position:static; width: 100%;font-weight: bold; text-align: center;">
+          <pre>&copy; 2025   </pre>
+        </footer>
+      </div>
+      <script src="darkmode.js"></script>
+  </body>
+</html>
