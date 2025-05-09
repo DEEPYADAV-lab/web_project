@@ -64,7 +64,7 @@ The following JavaScript implementations are included in this repository:
  ## Repository Access 
 To examine the individual project implementations, the repository can be accessed at:
 
-[ web Designing Project] https://github.com/DEEPYADAV-lab/web_project
+[ web Designing Project] http://DEEPYADAV-lab.github.io/web_project
 
 
 ## Conclusion
