@@ -64,7 +64,7 @@ Here are the projects included in this repository:
 ## Repository Access
 
 You can explore the full project collection on GitHub:  
-👉 [JavaScript Projects Repository](https://github.com/DEEPYADAV-lab/web_project)
+👉 [JavaScript Projects Repository](https://deepyadav-lab.github.io/web_project/)
  
 ## Conclusion
 
