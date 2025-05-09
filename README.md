@@ -55,7 +55,7 @@ This portfolio is a **work in progress** and will be updated regularly as I gain
  ## Repository Access 
 To examine the individual project implementations, the repository can be accessed at:
 
-[ web Designing Project]  
+[ web Designing Project]  https://deepyadav-lab.github.io/web_project/
 
 
  
