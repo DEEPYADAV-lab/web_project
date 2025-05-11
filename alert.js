@@ -1,3 +1,3 @@
 
-alert("Hello ! Welcome to JavaScript.");
+alert("Hello ! Welcome.");
                     
