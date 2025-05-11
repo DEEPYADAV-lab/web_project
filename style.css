@@ -70,12 +70,7 @@ body.dark-mode header {
     font-size: 18px;
     font-weight: bold;
 }
-colorBox {
-    height : 60px;
-    border: 5px dashed goldenrod;
-    margin: 10px auto;
-    transition: background-color 0.3s;
-}
+ 
 
 .form-group {
     margin-bottom: 15px;
