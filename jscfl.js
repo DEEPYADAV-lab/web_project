@@ -1,5 +1,6 @@
 function checkEvenOdd() {
-    let num = document.getElementById("number1").value;
+    let num = parseInt(document.getElementById("number1").value);
+
     if (num % 2 === 0) {
         document.getElementById("output4").innerHTML = `${num} is Even.`;
     } else {
@@ -8,19 +9,24 @@ function checkEvenOdd() {
 }
 
 function printNumbers() {
+    let num = parseInt(document.getElementById("number1").value);
     let output = "Numbers: ";
-    for (let i = 1; i <= 10; i++) {
+
+    for (let i = 1; i <= num; i++) {
         output += i + " ";
     }
+
     document.getElementById("output4").innerHTML = output;
 }
 
 function countDown() {
-    let i = 5;
+    let num = parseInt(document.getElementById("number1").value);
     let output = "Countdown: ";
-    while (i >= 1) {
-        output += i + " ";
-        i--;
+
+    while (num >= 1) {
+        output += num + " ";
+        num--;
     }
+
     document.getElementById("output4").innerHTML = output;
 }
